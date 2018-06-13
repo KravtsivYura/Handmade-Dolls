@@ -1,0 +1,117 @@
+#section-two {
+	background: #fff url('../img/second-sec-bg111.jpg') no-repeat;
+	background-size: cover;
+	padding-top: 80px;
+	color: #3f3e41;
+	.ba-container {
+		.section-two-content {
+			@include flex;
+			flex-direction: column;
+			padding-bottom: 110px;
+			.section-two-content__title {
+				@include flex;
+				margin-bottom: 100px;
+				.section-two-content__title-main {
+					@include flex;
+					flex-direction: column;
+					align-items: flex-start;
+					margin-right: 80px;
+					h2 {
+						font-size: 80px;
+						font-weight: 900;
+						color: #fd5c08;
+						margin-bottom: 15px;
+					}
+					h3 {
+						font-size: 34px;
+					}
+				}
+				.section-two-content__title-text {
+					font-size: 19px;
+					line-height: 1.47;
+					text-align: left;
+				}
+			}
+			.section-two-content__main {
+				@include flex;
+				flex-wrap: wrap;
+				margin-bottom: 40px;
+				.section-two-content__main-photo {
+					width: 33.33%;
+					position: relative;
+					overflow: hidden;
+					transition: top .7s;
+					&:hover {
+						cursor: pointer;
+					}
+					&:hover>.foto-hide {
+						top: 25%;
+						transition: top .7s;
+						cursor: pointer;
+					}
+					img {
+						display: block;
+					}
+					.section-two-content__main-photo-text {
+						position: absolute;
+						top: 37px;
+						left: 30px;
+						color: #fff;
+						h4 {
+							margin-bottom: 10px;
+							font-size: 16px;
+						}
+						span {
+							font-size: 42px;
+							font-family: 'Kaushan Script', cursive;
+							.euro {
+								fill: #fd5c08;
+							}
+						}
+					}
+					.foto-hide {
+						position: absolute;
+						background: rgba(255, 255, 255, .8);
+						top: 100%;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						padding: 30px 25px;
+						transition: top .7s;
+						&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 32px;
+							transform: translateY(-100%);
+							width: 0;
+							height: 0;
+							border-left: 15px solid transparent;
+							border-right: 15px solid transparent;
+							border-bottom: 15px solid rgba(255, 255, 255, .8);
+						}
+						h5 {
+							font-size: 23px;
+							color: #fd5c08;
+							margin-bottom: 15px;
+						}
+						h3 {
+							font-size: 34px;
+							font-weight: 800;
+							margin-bottom: 32px;
+						}
+						span {
+							@include span;
+						}
+					}
+				}
+			}
+			.section-two-button {
+				@include button;
+				align-self: flex-end;
+				margin-right: 20px;
+			}
+		}
+	}
+}

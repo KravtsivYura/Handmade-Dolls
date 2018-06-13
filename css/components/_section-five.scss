@@ -1,0 +1,58 @@
+#section-five {
+	.row {
+		width: 100%;
+		.section-text-photo {
+			overflow: hidden;
+			position: relative;
+			z-index: -1;
+			img {
+				@media screen and (max-width:768px){
+					height: 50vh;
+				}
+			}
+			.section-five-hidden {
+				position: absolute;
+				top: 0;
+				left: 100%;
+				z-index: 99;
+				width: 100%;
+				height: 100%;
+				transition: left .5s;
+				background-color: rgba(255, 255, 255, .5);
+				padding: 50px 25px;
+				@media screen and (max-width:768px){
+					padding: 10px 8px;
+				}
+				p {
+					font-size: 24px;
+					@media screen and (max-width:768px){
+						font-size: 12px;
+					}
+				}
+			}
+			.section-five-left0 {
+				left: 0;
+			}
+		}
+		.section-text-conteiner {
+			@include section-text-conteiner;
+			align-items: center;
+			justify-content: center;
+			p {
+				font-size: 24px;
+				margin-bottom: 50px;
+				@media screen and (max-width:768px){
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
+			}
+			button {
+				@include button-with-arrow;
+				color: white;
+				@media screen and (max-width:768px){
+					padding: 16px 18px;
+				}
+			}
+		}
+	}
+}

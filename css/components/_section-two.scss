@@ -1,0 +1,15 @@
+#section-two {
+	.row {
+		width: 100%;
+		.section-text-conteiner {
+			@include section-text-conteiner;
+		}
+		.section-text-photo {
+			img {
+				@media screen and (max-width:768px){
+					height: 50vh;
+				}
+			}
+		}
+	}
+}

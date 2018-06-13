@@ -1,0 +1,186 @@
+#section-five {
+	position: relative;
+	.section-five-slider-container {
+		.section-five-slides {
+			background-size: cover;
+			padding-top: 75px;
+			padding-bottom: 150px;
+			width: 100%;
+			height: 100%;
+		}
+		.ba-container {
+			.section-five-content {
+				@include flex;
+				min-height: 540px;
+				justify-content: space-between;
+				.section-five-content__left {
+					@include flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: flex-start;
+					align-self: flex-start;
+					padding: 29px;
+					color: #fff;
+					background-color: #fd5c08;
+					max-width: 270px;
+					min-height: 250px;
+					border-radius: 5px;
+					border-bottom-left-radius: 1px;
+					position: relative;
+					&:after {
+						content: '';
+						display: block;
+						width: 250px;
+						height: 0;
+						border-left: 245px solid transparent;
+						// border-right: 20px solid transparent;
+						border-top: 15px solid #fff;
+						position: absolute;
+						left: 0;
+						top: 100%;
+					}
+					h3 {
+						font-size: 38px;
+						font-weight: 800;
+					}
+					.for-span {
+						@include flex;
+						flex-direction: column;
+						align-items: flex-start;
+						text-transform: uppercase;
+						span {
+							font-size: 16px;
+							font-weight: bold;
+							margin-bottom: 10px;
+							&:nth-child(2) {
+								font-size: 18px;
+								margin-bottom: 14px;
+							}
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				.section-five-content__right {
+					align-self: flex-end;
+					.section-five-slider-container__main {
+						@include flex;
+						position: relative;
+						.section-five-slider-container__main--left {
+							@include flex;
+							flex-direction: column;
+							align-items: flex-start;
+							padding: 40px 30px;
+							padding-right: 160px;
+							background: rgba(255, 255, 255, .7);
+							h4 {
+								font-size: 30px;
+								color: #fd5c08;
+								margin-bottom: 27px;
+							}
+							p {
+								font-size: 14px;
+								line-height: 1.5;
+								color: #3f3e41;
+								max-width: 335px;
+								margin-bottom: 22px;
+							}
+							span {
+								font-size: 14px;
+								font-weight: bold;
+								position: relative;
+								padding-left: 20px;
+								color: #3f3e41;
+								@include arrow-right;
+								&:hover:before {
+									left: 12px;
+									transition: left .5s;
+								}
+							}
+						}
+						.section-five-slider-container__main--right {
+							@include flex;
+							flex-direction: column;
+							justify-content: flex-end;
+							align-items: flex-start;
+							// padding: 100px 40px 30px 20px;
+							padding-left: 20px;
+							padding-bottom: 30px;
+							padding-right: 35px;
+							background-color: #3f3e41;
+							align-self: stretch;
+							.icon {
+								margin-bottom: 35px;
+							}
+							h4 {
+								margin-bottom: 10px;
+								font-size: 16px;
+								color: #fff;
+							}
+							span {
+								font-size: 50px;
+								font-weight: 900;
+								color: #fd5c08;
+								font-family: 'Kaushan Script', cursive;
+								.euro {
+									fill: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.section-five-slider-controls {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 100%;
+		background-color: #ededed;
+		box-shadow: 0px 1px 0 0 #c9c9c9;
+		text-transform: uppercase;
+		z-index: 99;
+		.ba-container {
+			@include flex;
+			justify-content: space-around;
+			.last-minute {
+				font-size: 14px;
+				font-weight: bold;
+				padding: 17px 35px;
+				background-color: #fd5c08;
+				position: relative;
+				color: #ffffff;
+				&:before {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 0;
+					border-left: 84px solid transparent;
+					border-right: 84px solid transparent;
+					border-bottom: 10px solid #fd5c08;
+					position: absolute;
+					bottom: 100%;
+					left: 0;
+				}
+			}
+			.section-five-slider-controls__buttons {
+				@include flex;
+				span {
+					@include span;
+				}
+				.button-controls {
+					margin-left: 50px;
+					@include flex;
+					.section-three-sliders-next2 {
+						@include slider-button;
+					}
+					.section-three-sliders-prev2 {
+						@include slider-button;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+#section-three {
+	.row {
+		width: 100%;
+		.section-text-photo {
+			img {
+				@media screen and (max-width:768px){
+					height: 50vh;
+				}
+			}
+		}
+		.section-text-conteiner {
+			@include section-text-conteiner;
+			justify-content: center;
+			p {
+				font-size: 24px;
+				margin-bottom: 0;
+				@media screen and (max-width:768px){
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

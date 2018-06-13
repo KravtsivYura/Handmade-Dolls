@@ -1,0 +1,19 @@
+#section-four {
+	background: #fff url('../img/four-sec-bg111.jpg') no-repeat;
+	.ba-container {
+		@include flex;
+		flex-direction: column;
+		padding-top: 120px;
+		padding-bottom: 115px;
+		h2 {
+			font-size: 80px;
+			font-weight: 900;
+			color: #fd5c08;
+			margin-bottom: 20px;
+		}
+		h4 {
+			font-size: 34px;
+			color: #3f3e41;
+		}
+	}
+}
