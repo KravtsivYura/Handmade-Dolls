@@ -906,6 +906,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #4F4F4F; }
 
+img {
+  width: 100%; }
+
 .slick-dots {
   bottom: 40px;
   left: 10%;
