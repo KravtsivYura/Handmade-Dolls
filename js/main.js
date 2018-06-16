@@ -62,10 +62,14 @@
         }
       });
 
-      $('.button-like').on('click', function(){
-        $(this).prev('.circle-heart').children('.heart').css('display', 'none');
-        $(this).prev('.circle-heart').children('.heart-like').css('display', 'block');
-      });
+      // $('.button-like').on('click', function(){
+      //   $(this).prev('.circle-heart').children('.heart').css('display', 'none');
+      //   $(this).prev('.circle-heart').children('.heart-like').css('display', 'block');
+      // });
+
+     $('.button-like').on('click', function(){
+        $(this).prev('.circle-heart').children('.heart-like').toggleClass('heart-like-show');
+       });
 
 	});
 

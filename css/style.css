@@ -698,7 +698,7 @@ header {
     left: 40px;
     background: #fff;
     border-radius: 50%;
-    padding: 12px;
+    padding: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -706,7 +706,13 @@ header {
     #section-six .row .section-six-photo .circle-heart .heart {
       display: block; }
     #section-six .row .section-six-photo .circle-heart .heart-like {
-      display: none; }
+      z-index: 98;
+      display: none;
+      position: absolute; }
+    #section-six .row .section-six-photo .circle-heart .heart-like-show {
+      z-index: 99;
+      display: block;
+      position: absolute; }
 #section-six .row button {
   display: flex;
   align-items: center;

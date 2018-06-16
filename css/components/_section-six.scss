@@ -15,13 +15,20 @@
 				left: 40px;
 				background: #fff;
 				border-radius: 50%;
-				padding: 12px;
+				padding: 14px;
 				@include flex;
 				.heart {
 					display: block;
 				}
 				.heart-like {
+					z-index: 98;
 					display: none;
+					position: absolute;
+				}
+				.heart-like-show {
+					z-index: 99;
+					display: block;
+					position: absolute;
 				}
 			}
 		}
