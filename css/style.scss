@@ -1,3 +1,10 @@
+html {
+	font-size: 16px;
+	@media screen and (max-width:768px){
+		font-size: 8px;
+	}
+}
+
 @mixin flex {
 	display: flex;
 	align-items: center;
@@ -13,7 +20,7 @@
 	}
 	.fas {
 		color: #4F4F4F;
-		font-size: 22px;
+		font-size: 1.375em;
 	}
 }
 @mixin button-with-arrow {
@@ -24,7 +31,7 @@
 	border: none;
 	outline: none;
 	padding: 20px 24px;
-	font-size: 18px;
+	font-size: 1.125em;
 	text-transform: uppercase;
 	transition: transform .7s;
 	&:hover {
@@ -53,19 +60,19 @@
 	h2 {
 		margin-bottom: 40px;
 		font-weight: 600;
-		font-size: 36px;
-		@media screen and (max-width:768px){
-			font-size: 20px;
-		}
+		font-size: 2.25em;
+		// @media screen and (max-width:768px){
+		// 	font-size: 20px;
+		// }
 	}
 	p {
-		font-size: 28px;
-		@media screen and (max-width:768px){
-			font-size: 16px;
-		}
+		font-size: 1.75em;
+		// @media screen and (max-width:768px){
+		// 	font-size: 16px;
+		// }
 	}
 	.section-footer-span {
-		font-size: 24px;
+		font-size: 1.5em;
 		color: #333333;
 		position: absolute;
 		left: 80px;
@@ -73,7 +80,7 @@
 		@media screen and (max-width:768px){
 			left: 10px;
 			bottom: 10px;
-			font-size: 16px;
+			// font-size: 16px;
 		}
 	}
 }
@@ -92,6 +99,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	// font-size: 16px;
 	.row {
 
 	}
@@ -99,6 +107,7 @@ body {
 
 	}
 }
+
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
@@ -119,7 +128,7 @@ img {
 	width: inherit;
 }
 .slick-dots li button:before {
-	font-size: 50px;
+	font-size: 3.125rem;
 }
 .slick-dotted.slick-slider {
 	margin-bottom: 0;

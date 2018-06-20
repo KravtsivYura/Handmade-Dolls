@@ -75,4 +75,10 @@
 
 })(jQuery);
 
-
+var forRotating = document.querySelector('.circle-heart');
+var angle = 0;
+function rotate(){
+  angle = (angle + 45)%360;
+  forRotating.style.transform = "rotate(" + angle + "deg)";
+  window.requestAnimationFrane(rotate);
+}
